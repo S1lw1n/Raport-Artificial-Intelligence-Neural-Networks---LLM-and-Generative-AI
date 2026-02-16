@@ -20,7 +20,7 @@ Praca nad modelem 3D wymaga precyzyjnych rzutów (blueprintów). Wykorzystaliśm
 Poniżej przedstawiamy dokumentację z procesu konsultacji dotyczących referencji oraz wygenerowane materiały:
 
 ![Czat z AI o referencjach 1](5231372271245530319.jpg)
-![Czat z AI o referencjach 2](5472308434628711551.jpg)
+![Czat z AI o referencjach 2](5231372271245530320.png)
 
 ---
 
