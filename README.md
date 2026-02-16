@@ -65,6 +65,7 @@ Poniżej przedstawiamy dokumentację z procesu konsultacji dotyczących referenc
 **Gemini:** Nie używaj funkcji Join, bo stracisz kontrolę nad materiałami. Użyj **Parentingu**. Zaznacz wszystkie elementy podwozia i turbiny, na samym końcu zaznacz kadłub i naciśnij **Ctrl + P -> Object**. W ten sposób kadłub zostanie „rodzicem” – jak koledzy przesuną samolot, Twoje detale polecą razem z nim.
 
 **Ja:** Dzięki! Wszystko działa i wygląda dokładnie tak, jak chcieliśmy.
+
 ---
 
 ### Sekcja Mikity Tsarkovicha (Konsultacje z Gemini):
