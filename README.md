@@ -100,6 +100,7 @@ Poniżej przedstawiamy dokumentację z procesu konsultacji dotyczących referenc
 **Ja:** Na tej podstawie dokończę model kadłuba i przednią szybę.
 
 **Gemini:** Powodzenia przy dalszej pracy nad projektem!
+
 ---
 
 ### Sekcja Daniila Yakauleva (Konsultacje z ChatGPT):
