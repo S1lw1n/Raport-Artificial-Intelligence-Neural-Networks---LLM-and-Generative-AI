@@ -104,34 +104,36 @@ Poniżej przedstawiamy dokumentację z procesu konsultacji dotyczących referenc
 ---
 
 ### Sekcja Daniila Yakauleva (Konsultacje z ChatGPT):
-**Ja:** Na bazie tej referencji chcę zacząć od skrzydeł, ale nie wiem, czy od razu robić je grube, czy najpierw płaskie.
+**Ja:** Cześć! Przygotowałem już referencje dla zespołu. Na ich bazie chcę zacząć od skrzydeł, ale nie wiem, czy od razu robić je grube, czy najpierw płaskie?
 
-**ChatGPT:** Najlepiej zacząć od płaskiej geometrii widzianej z góry, a dopiero później dodać grubość. Łatwiej wtedy kontrolować kształt i proporcje.
+**ChatGPT:** Cześć! Najlepiej zacząć od płaskiej geometrii (Plane) widzianej z góry. Dopasuj obrys do rzutu, a dopiero później dodaj grubość przez *Extrude*. Dzięki temu łatwiej będzie Ci kontrolować proporcje końcówek skrzydeł bez walki z grubością od samego początku.
 
-**Ja:** Okej, zrobiłem jedno skrzydło, ale cały czas mam wrażenie, że kąt nachylenia jest trochę dziwny.
+**Ja:** Okej, zrobiłem jedno skrzydło, ale cały czas mam wrażenie, że kąt nachylenia jest trochę dziwny. Jak patrzę z góry jest ok, ale z boku wygląda to nienaturalnie.
 
-**ChatGPT:** To normalne na tym etapie. Sprawdź skrzydło jednocześnie w widoku z góry i z boku (widok ortograficzny). Drobna korekta rotacji często wystarcza. Zobacz: [YouTube: Blender 3D Viewport Navigation and Orthographic Views].
+**ChatGPT:** To klasyczny problem przy przechodzeniu z 2D do 3D. Sprawdź skrzydło jednocześnie w widoku z góry i z boku (użyj widoków ortograficznych). Drobna korekta rotacji względem osi Y często wystarcza, by nadać mu tzw. wznios (dihedral angle). Zobacz ten poradnik o nawigacji: [YouTube: Blender 3D Viewport Navigation and Orthographic Views].
 
-**Ja:** Nie chcę robić drugiego skrzydła ręcznie, bo boję się, że coś się rozjedzie.
+**Ja:** Próbuję zrobić drugie skrzydło modyfikatorem Mirror, ale ono pojawia się w środku tego pierwszego albo gdzieś daleko od samolotu. Co robię źle?
 
-**ChatGPT:** W takiej sytuacji najlepiej użyć symetrii. Zrób jedno skrzydło i zastosuj modyfikator **Mirror**, wtedy oba będą identyczne. Jako obiekt odniesienia ustaw kadłub Mikity.
+**ChatGPT:** Modyfikator Mirror działa względem punktu *Origin* obiektu. Jeśli przesuwałeś skrzydło w Object Mode, jego punkt środkowy jest w złym miejscu. Zaznacz skrzydło i naciśnij **Ctrl + A -> All Transforms**. Możesz też w modyfikatorze Mirror wybrać "Mirror Object" i wskazać pipetą kadłub Mikity – wtedy skrzydło odbije się idealnie względem osi samolotu. Zobacz, jak to działa tutaj: [YouTube: Blender Mirror Modifier Tutorial].
 
-**Ja:** Skrzydła są już na miejscu, ale po włączeniu shade smooth wyglądają zbyt miękko, jakby były z gumy.
+**Ja:** Skrzydła są już na miejscu, ale po włączeniu *Shade Smooth* wyglądają zbyt miękko, jakby były z gumy. Krawędź natarcia powinna być wyraźniejsza.
 
-**ChatGPT:** Spróbuj włączyć **Auto Smooth** i ustawić odpowiedni kąt. To pozwoli zachować ostre krawędzie tam, gdzie są potrzebne. Jeśli to nie pomoże, sprawdź podwójne wierzchołki: [YouTube: Blender - How to fix Shading Issues (Merge by Distance)].
+**ChatGPT:** Spróbuj włączyć funkcję **Auto Smooth** (zakładka Object Data Properties > Normals) i ustaw kąt na około 30-40 stopni. To pozwoli zachować ostre krawędzie tam, gdzie są potrzebne, a wygładzić płaskie powierzchnie. Jeśli cieniowanie nadal „pływa”, sprawdź, czy nie masz podwójnych wierzchołków po operacjach Extrude. Użyj: [YouTube: Blender - How to fix Shading Issues (Merge by Distance)].
 
-**Ja:** Teraz cały model wygląda trochę zbyt prosty. chciałbym dodać coś jeszcze, ale bez przesady.
+**Ja:** Teraz cały model wygląda trochę zbyt prosty. Chciałbym dodać coś jeszcze od siebie, żeby dół samolotu nie był taki pusty, ale nie chcę przesadzić z detalami.
 
-**ChatGPT:** Możesz dodać kilka drobnych elementów technicznych na spodzie kadłuba, np. anteny albo małe obudowy. Nie muszą być bardzo szczegółowe – w low-poly liczy się umiar.
+**ChatGPT:** Możesz dodać kilka drobnych elementów technicznych na spodzie kadłuba, np. anteny, obudowy systemów łączności lub małe wypustki aerodynamiczne. W stylu low-poly nie musisz odwzorowywać ich idealnie – wystarczą proste bryły (cylindry, sześciany). To nada modelowi „skali” i realizmu.
 
-**Ja:** Dodałem parę takich elementów, ale boję się, że model stanie się za ciężki.
+**Ja:** Dodałem parę takich elementów, ale boję się, że model stanie się za ciężki i będzie zacinać Blender kolegów przy integracji.
 
-**ChatGPT:** Jeśli to są proste bryły i jest ich tylko kilka, nie wpłynie to znacząco na wydajność. Dopóki nie używasz Subdivision Surface z wysokim poziomem, wszystko będzie działać płynnie.
+**ChatGPT:** Jeśli to są proste bryły (kilkanaście wierzchołków na element), nie wpłynie to znacząco na wydajność. W low-poly liczy się umiar. Unikaj tylko dodawania modyfikatora *Subdivision Surface* na każdym małym obiekcie, a wszystko będzie działać płynnie.
 
-**Ja:** Okej, wizualnie wygląda lepiej. Teraz trzeba to wszystko połączyć z plikiem, który mają koledzy.
+**Ja:** Wizualnie wygląda to teraz świetnie. Teraz muszę to wszystko połączyć z plikiem, który mają koledzy. Czy muszę te wszystkie anteny i skrzydła łączyć w jeden obiekt funkcją Join?
 
-**ChatGPT:** Upewnij się, że wszystkie obiekty są poprawnie ustawione względem kadłuba i przypisane przez **Parent-Child (Ctrl+P)**. To ułatwi integrację i poruszanie całym modelem.
+**ChatGPT:** Odradzam Join, bo trudniej będzie potem zmieniać materiały. Najlepszym rozwiązaniem jest **Parenting**. Zaznacz wszystkie swoje detale, na samym końcu zaznacz kadłub (jako obiekt nadrzędny) i naciśnij **Ctrl + P -> Object**. Dzięki temu kadłub będzie „rodzicem” – gdy koledzy go przesuną, Twoje skrzydła i anteny polecą razem z nim. Zobacz, jak zarządzać hierarchią: [YouTube: Parenting objects in Blender].
 
-**Ja:** Po imporcie do wspólnego pliku wszystko działa, skrzydła i detale poruszają się razem z kadłubem.
+**Ja:** Po imporcie do wspólnego pliku wszystko działa! Skrzydła i detale poruszają się razem z kadłubem, a skala pasuje do tego, co zrobili Ivan i Mikita.
+
+**ChatGPT:** Super! Poprawny Parenting to podstawa pracy zespołowej w 3D. Wasz wspólny model jest teraz gotowy do dalszej obróbki.
 
 **ChatGPT:** Super. W takim razie Twoja część modelu jest gotowa i można przejść do dalszej pracy zespołowej.
