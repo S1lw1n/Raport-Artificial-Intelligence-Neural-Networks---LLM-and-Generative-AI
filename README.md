@@ -34,11 +34,11 @@ Poniżej przedstawiamy dokumentację z procesu konsultacji dotyczących referenc
 
 **Ja:** Próbowałem tego Knife Project, ale szczerze mówiąc, u mnie to w ogóle nie reaguje. Klikam w menu i nic się nie wycina, albo dostaję błąd, że nie znaleziono obiektów do cięcia. Masz jakiś konkretny filmik, który pokazuje to krok po kroku?
 
-**Gemini:** Kolejność zaznaczania i tryb są tu kluczowe. Zobacz ten krótki tutorial: [Blender Knife Project tool quick guide]. Pamiętaj: najpierw zaznaczasz w Object Mode swój „nóż” (obrys okna), potem z Shiftem kadłub, wchodzisz w Edit Mode i dopiero wybierasz z menu na górze Mesh > Knife Project.
+**Gemini:** Kolejność zaznaczania i tryb są tu kluczowe. Zobacz ten krótki tutorial: [Blender Knife Project tool quick guide](https://www.youtube.com/watch?v=cuK0xoo6fDo). Pamiętaj: najpierw zaznaczasz w Object Mode swój „nóż” (obrys okna), potem z Shiftem kadłub, wchodzisz w Edit Mode i dopiero wybierasz z menu na górze Mesh > Knife Project.
 
 **Ja:** Obejrzałem, robię dokładnie tak samo i dalej nic. Wycina mi dziury w jakichś dziwnych miejscach albo dostaję komunikat "No mesh objects found to cut". Co jeszcze może być nie tak? Przecież ustawiam okno prosto przed samolotem.
 
-**Gemini:** Knife Project działa w oparciu o to, co aktualnie widzi Twoja kamera w rzutni. Jeśli patrzysz pod kątem, cięcie będzie krzywe lub nie trafi w obiekt. Musisz przejść do widoku ortograficznego (klawisz Numpad 3 dla widoku z boku). Zobacz ten drugi, bardziej szczegółowy filmik, który wyjaśnia błędy z pozycjonowaniem kamery: [Why Knife Project is NOT working - Blender Tutorial]. Upewnij się, że Twój „nóż” jest idealnie przed kadłubem i patrzysz na nich prosto z boku.
+**Gemini:** Knife Project działa w oparciu o to, co aktualnie widzi Twoja kamera w rzutni. Jeśli patrzysz pod kątem, cięcie będzie krzywe lub nie trafi w obiekt. Musisz przejść do widoku ortograficznego (klawisz Numpad 3 dla widoku z boku). Zobacz ten drugi, bardziej szczegółowy filmik, który wyjaśnia błędy z pozycjonowaniem kamery: [Why Knife Project is NOT working](https://www.youtube.com/watch?v=4OJhUv-v6IM). Upewnij się, że Twój „nóż” jest idealnie przed kadłubem i patrzysz na nich prosto z boku.
 
 **Ja:** Dobra, teraz w końcu załapało! Widok ortograficzny to był brakujący element. Ale teraz pojawił się kolejny problem – jak wyciąłem te otwory, to widać, że samolot jest pusty w środku. Wygląda to słabo. Muszę teraz modelować fotele i całe wnętrze? Nie dam rady tego zrobić, to za dużo roboty.
 
@@ -46,7 +46,7 @@ Poniżej przedstawiamy dokumentację z procesu konsultacji dotyczących referenc
 
 **Ja:** Dzięki, dobry pomysł. Zrobiłem czarny materiał i od razu model wygląda poważniej. Teraz biorę się za turbiny. Szczerze nie mam pojęcia, jak zacząć modelować taki silnik, żeby nie był tylko zwykłym klocem. Masz jakieś wideo o modelowaniu turbin z cylindrów?
 
-**Gemini:** Turbinę najlepiej budować modułowo z cylindrów. Zobacz te tutoriale, pomogą Ci zrozumieć workflow: [Modeling a simple Jet Engine in Blender]. Zacznij od jednego cylindra na obudowę, użyj funkcji Inset (I) oraz Extrude (E) do środka, żeby stworzyć wlot. Dzięki temu turbina będzie miała głębię.
+**Gemini:** Turbinę najlepiej budować modułowo z cylindrów. Zobacz te tutoriale, pomogą Ci zrozumieć workflow: [Modeling a simple Jet Engine in Blender](https://www.youtube.com/shorts/SPSJym33eIE). Zacznij od jednego cylindra na obudowę, użyj funkcji Inset (I) oraz Extrude (E) do środka, żeby stworzyć wlot. Dzięki temu turbina będzie miała głębię.
 
 **Ja:** Wymodelowałem turbinę, ale mam problem z jej wygładzaniem. Jak włączam „Shade Smooth”, to cały silnik wygląda jak zgnieciona galareta, krawędzie, które powinny być ostre, są rozmyte. Co z tym zrobić?
 
@@ -75,7 +75,7 @@ Poniżej przedstawiamy dokumentację z procesu konsultacji dotyczących referenc
 
 **Ja:** Jak poprawnie ustawić proporcje kadłuba?
 
-**Gemini:** Wejdź w Edit Mode i użyj Scale (S) oraz Proportional Editing (O). Zwęż przód i tył, aby uzyskać aerodynamiczny kształt. Dodaj edge loopy (Ctrl+R), żeby lepiej kontrolować krzywizny. Możesz też obejrzeć poradniki na YouTube: „Blender Beginner Hard Surface Modeling” – Blender Guru oraz „Modeling a Jet Airplane in Blender” – CG Cookie.
+**Gemini:** Wejdź w Edit Mode i użyj Scale (S) oraz Proportional Editing (O). Zwęż przód i tył, aby uzyskać aerodynamiczny kształt. Dodaj edge loopy (Ctrl+R), żeby lepiej kontrolować krzywizny. Możesz też obejrzeć poradniki na YouTube: „Blender Beginner Hard Surface Modeling” – CG Boost( https://www.youtube.com/watch?v=nsTjnQ067sw&t=1s ) oraz „Modeling a Jet Airplane in Blender” – CG Cookie.
 
 **Ja:** Jak wymodelować przód samolotu, żeby wyglądał realistycznie?
 
