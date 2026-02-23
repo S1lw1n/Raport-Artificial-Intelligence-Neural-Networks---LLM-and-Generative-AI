@@ -75,15 +75,15 @@ Poniżej przedstawiamy dokumentację z procesu konsultacji dotyczących referenc
 
 **Ja:** Jak poprawnie ustawić proporcje kadłuba?
 
-**Gemini:** Wejdź w Edit Mode i użyj Scale (S) oraz Proportional Editing (O). Zwęż przód i tył, aby uzyskać aerodynamiczny kształt. Dodaj edge loopy (Ctrl+R), żeby lepiej kontrolować krzywizny. Możesz też obejrzeć poradniki na YouTube: „Blender Beginner Hard Surface Modeling” – CG Boost( https://www.youtube.com/watch?v=nsTjnQ067sw&t=1s ) oraz „Modeling a Jet Airplane in Blender” – CG Cookie.
+**Gemini:** Wejdź w Edit Mode i użyj Scale (S) oraz Proportional Editing (O). Zwęż przód i tył, aby uzyskać aerodynamiczny kształt. Dodaj edge loopy (Ctrl+R), żeby lepiej kontrolować krzywizny. Możesz też obejrzeć poradniki na YouTube: „Blender Beginner Hard Surface Modeling” – CG Boost( https://www.youtube.com/watch?v=nsTjnQ067sw&t=1s ) oraz „Modeling a Jet Airplane in Blender” ( https://www.youtube.com/shorts/3gXS6FaMr0w )
 
 **Ja:** Jak wymodelować przód samolotu, żeby wyglądał realistycznie?
 
-**Gemini:** Dodaj więcej geometrii w przedniej części modelu. Użyj Subdivision Surface modifier, a następnie dodaj supporting edge loopy blisko krawędzi, aby zachować kontrolę nad kształtem. Pomocny może być poradnik: „Subdivision Surface Modeling Tips” – Josh Gambrell.
+**Gemini:** Dodaj więcej geometrii w przedniej części modelu. Użyj Subdivision Surface modifier, a następnie dodaj supporting edge loopy blisko krawędzi, aby zachować kontrolę nad kształtem. Pomocny może być poradnik: „Subdivision Surface Modeling Tips” – Fruit Zeus (https://www.youtube.com/watch?v=n1HUn7KmNWw).
 
 **Ja:** Modeluję teraz przednią szybę. Ma być matowa i nieprzezroczysta. Jak ustawić materiał?
 
-**Gemini:** Dodaj nowy materiał z shaderem Principled BSDF. Ustaw Transmission na 0, aby szyba była nieprzezroczysta. Zwiększ Roughness do około 0.6–0.8, aby uzyskać efekt matowy. Możesz ustawić ciemnoszary kolor. Jeśli potrzebujesz dodatkowych informacji: „Blender Materials Beginner Guide” – Blender Guru.
+**Gemini:** Dodaj nowy materiał z shaderem Principled BSDF. Ustaw Transmission na 0, aby szyba była nieprzezroczysta. Zwiększ Roughness do około 0.6–0.8, aby uzyskać efekt matowy. Możesz ustawić ciemnoszary kolor. Jeśli potrzebujesz dodatkowych informacji: „Blender Materials Beginner Guide” – Blender Guru(https://www.youtube.com/watch?v=z-Xl9tGqH14).
 
 **Ja:** Czy szybę należy oddzielić jako osobny obiekt?
 
@@ -95,7 +95,7 @@ Poniżej przedstawiamy dokumentację z procesu konsultacji dotyczących referenc
 
 **Ja:** Jak poprawić realizm modelu?
 
-**Gemini:** Dodaj delikatny Bevel na ostrych krawędziach. W rzeczywistości krawędzie nie są idealnie ostre. Użyj HDRI w ustawieniach World, aby uzyskać bardziej realistyczne oświetlenie. Polecany poradnik: „Lighting in Blender for Beginners” – Blender Guru.
+**Gemini:** Dodaj delikatny Bevel na ostrych krawędziach. W rzeczywistości krawędzie nie są idealnie ostre. Użyj HDRI w ustawieniach World, aby uzyskać bardziej realistyczne oświetlenie. Polecany poradnik: „Lighting in Blender for Beginners” – Blender Guru(https://www.youtube.com/watch?v=KO29y5eW61g).
 
 **Ja:** Na tej podstawie dokończę model kadłuba i przednią szybę.
 
@@ -110,15 +110,15 @@ Poniżej przedstawiamy dokumentację z procesu konsultacji dotyczących referenc
 
 **Ja:** Okej, zrobiłem jedno skrzydło, ale cały czas mam wrażenie, że kąt nachylenia jest trochę dziwny. Jak patrzę z góry jest ok, ale z boku wygląda to nienaturalnie.
 
-**ChatGPT:** To klasyczny problem przy przechodzeniu z 2D do 3D. Sprawdź skrzydło jednocześnie w widoku z góry i z boku (użyj widoków ortograficznych). Drobna korekta rotacji względem osi Y często wystarcza, by nadać mu tzw. wznios (dihedral angle). Zobacz ten poradnik o nawigacji: [YouTube: Blender 3D Viewport Navigation and Orthographic Views].
+**ChatGPT:** To klasyczny problem przy przechodzeniu z 2D do 3D. Sprawdź skrzydło jednocześnie w widoku z góry i z boku (użyj widoków ortograficznych). Drobna korekta rotacji względem osi Y często wystarcza, by nadać mu tzw. wznios (dihedral angle). Zobacz ten poradnik o nawigacji: [YouTube: Blender 3D Viewport Navigation and Orthographic Views https://www.youtube.com/watch?v=ILqOWe3zAbk].
 
 **Ja:** Próbuję zrobić drugie skrzydło modyfikatorem Mirror, ale ono pojawia się w środku tego pierwszego albo gdzieś daleko od samolotu. Co robię źle?
 
-**ChatGPT:** Modyfikator Mirror działa względem punktu *Origin* obiektu. Jeśli przesuwałeś skrzydło w Object Mode, jego punkt środkowy jest w złym miejscu. Zaznacz skrzydło i naciśnij **Ctrl + A -> All Transforms**. Możesz też w modyfikatorze Mirror wybrać "Mirror Object" i wskazać pipetą kadłub Mikity – wtedy skrzydło odbije się idealnie względem osi samolotu. Zobacz, jak to działa tutaj: [YouTube: Blender Mirror Modifier Tutorial].
+**ChatGPT:** Modyfikator Mirror działa względem punktu *Origin* obiektu. Jeśli przesuwałeś skrzydło w Object Mode, jego punkt środkowy jest w złym miejscu. Zaznacz skrzydło i naciśnij **Ctrl + A -> All Transforms**. Możesz też w modyfikatorze Mirror wybrać "Mirror Object" i wskazać pipetą kadłub Mikity – wtedy skrzydło odbije się idealnie względem osi samolotu. Zobacz, jak to działa tutaj: [YouTube: Blender Mirror Modifier Tutorial(https://www.youtube.com/watch?v=-AxJTwHXul4)].
 
 **Ja:** Skrzydła są już na miejscu, ale po włączeniu *Shade Smooth* wyglądają zbyt miękko, jakby były z gumy. Krawędź natarcia powinna być wyraźniejsza.
 
-**ChatGPT:** Spróbuj włączyć funkcję **Auto Smooth** (zakładka Object Data Properties > Normals) i ustaw kąt na około 30-40 stopni. To pozwoli zachować ostre krawędzie tam, gdzie są potrzebne, a wygładzić płaskie powierzchnie. Jeśli cieniowanie nadal „pływa”, sprawdź, czy nie masz podwójnych wierzchołków po operacjach Extrude. Użyj: [YouTube: Blender - How to fix Shading Issues (Merge by Distance)].
+**ChatGPT:** Spróbuj włączyć funkcję **Auto Smooth** (zakładka Object Data Properties > Normals) i ustaw kąt na około 30-40 stopni. To pozwoli zachować ostre krawędzie tam, gdzie są potrzebne, a wygładzić płaskie powierzchnie. Jeśli cieniowanie nadal „pływa”, sprawdź, czy nie masz podwójnych wierzchołków po operacjach Extrude. Użyj: [YouTube: Blender - How to fix Shading Issues( https://www.youtube.com/shorts/-uZPU2ARjfw )].
 
 **Ja:** Teraz cały model wygląda trochę zbyt prosty. Chciałbym dodać coś jeszcze od siebie, żeby dół samolotu nie był taki pusty, ale nie chcę przesadzić z detalami.
 
@@ -130,7 +130,7 @@ Poniżej przedstawiamy dokumentację z procesu konsultacji dotyczących referenc
 
 **Ja:** Wizualnie wygląda to teraz świetnie. Teraz muszę to wszystko połączyć z plikiem, który mają koledzy. Czy muszę te wszystkie anteny i skrzydła łączyć w jeden obiekt funkcją Join?
 
-**ChatGPT:** Odradzam Join, bo trudniej będzie potem zmieniać materiały. Najlepszym rozwiązaniem jest **Parenting**. Zaznacz wszystkie swoje detale, na samym końcu zaznacz kadłub (jako obiekt nadrzędny) i naciśnij **Ctrl + P -> Object**. Dzięki temu kadłub będzie „rodzicem” – gdy koledzy go przesuną, Twoje skrzydła i anteny polecą razem z nim. Zobacz, jak zarządzać hierarchią: [YouTube: Parenting objects in Blender].
+**ChatGPT:** Odradzam Join, bo trudniej będzie potem zmieniać materiały. Najlepszym rozwiązaniem jest **Parenting**. Zaznacz wszystkie swoje detale, na samym końcu zaznacz kadłub (jako obiekt nadrzędny) i naciśnij **Ctrl + P -> Object**. Dzięki temu kadłub będzie „rodzicem” – gdy koledzy go przesuną, Twoje skrzydła i anteny polecą razem z nim. Zobacz, jak zarządzać hierarchią: [YouTube: Parenting objects in Blender(https://www.youtube.com/watch?v=VnXW_r9tTvo)].
 
 **Ja:** Po imporcie do wspólnego pliku wszystko działa! Skrzydła i detale poruszają się razem z kadłubem, a skala pasuje do tego, co zrobili Ivan i Mikita.
 
